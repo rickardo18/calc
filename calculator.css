@@ -1,0 +1,125 @@
+body {
+  background: linear-gradient(135deg, #A0D7FF 0%, #109DFF 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.calculator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  background: linear-gradient(135deg, #17181A 0%, #303136 100%);
+  border-radius: 39px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 32px 24px;
+  width: 350px;
+  max-width: 90vw;
+}
+
+.calculator-display {
+  background: rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 24px 16px 8px 16px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.calculator-equation {
+  font-size: 1.1rem;
+  color: #818181;
+  margin-bottom: 4px;
+  min-height: 24px;
+}
+
+.calculator-result {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #fff;
+  min-height: 48px;
+}
+
+.calculator-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.calculator-row--top {
+  margin-bottom: 18px;
+}
+
+.btn {
+  flex: 1 1 0;
+  background: #303136;
+  color: #29A8FF;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 18px 0;
+  margin: 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.btn:active {
+  background: #1991FF;
+  color: #fff;
+}
+
+.btn-func {
+  background: #303136;
+  color: #29A8FF;
+  font-size: 1.1rem;
+  border-radius: 24px;
+  padding: 10px 0;
+}
+
+.btn-ac {
+  background: #616161;
+  color: #A5A5A5;
+}
+
+.btn-del {
+  background: #303136;
+  color: #A5A5A5;
+}
+
+.btn-op {
+  background: linear-gradient(135deg, #005DB2 0%, #339DFF 100%);
+  color: #fff;
+}
+
+.btn-eq {
+  background: #1991FF;
+  color: #B2DAFF;
+  border-radius: 12px;
+}
+
+.btn-zero {
+  flex: 2 1 0;
+  background: #303136;
+  color: #29A8FF;
+  border-radius: 16px;
+  font-size: 1.5rem;
+  padding: 18px 0;
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    padding: 16px 4px;
+    width: 98vw;
+  }
+  .calculator-row {
+    gap: 6px;
+  }
+}
